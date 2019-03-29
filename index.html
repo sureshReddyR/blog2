@@ -150,7 +150,7 @@
 				<div class="container_12">
 					<div class="grid_5">
 						<h3>Booking Form</h3>
-						<form id="bookingForm" action="mailto:sr48285@gmail.com?Subject=Booking%20Notfication" method="post" enctype="multipart/form-data">
+						<form id="bookingForm" action="mailto:sr48285@gmail.com?Subject=Booking%20Notfication" data-rel="external" method="post" enctype="multipart/form-data">
 
 							<div class="fl1">
 								<div class="tmInput">
@@ -216,7 +216,8 @@
 								<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 							</div>
               <div class="button">
-							<input type="submit" name="" value="Send">
+							<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a>
+							<input href="mailto:someone@example.com?Subject=Hello%20again" type="submit" name="" value="Send">
 						</div>
 
 						</form>
